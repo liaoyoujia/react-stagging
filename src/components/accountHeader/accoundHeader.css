@@ -1,0 +1,50 @@
+.acc-box {
+  width: 100%;
+}
+
+.acc-head {
+  width: 100%;
+  line-height: 60px;
+  padding: 0 20px;
+  box-sizing: border-box;
+  border-bottom: 1px solid #ffff44;
+  text-align: right;
+}
+
+.acc-body {
+  width: 100%;
+  padding-right: 20px;
+  box-sizing: border-box;
+  line-height: 42px;
+  display: flex;
+  justify-content: space-between;
+
+}
+
+.acc-body .acc-page {
+  margin-left: 120px;
+  font-size: 18px;
+  position: relative;
+}
+
+.acc-page:after {
+  content: '';
+  position: absolute;
+  top: 100%;
+  left:50%;
+  margin-left: -10px;
+  width:0;
+	height:0;
+	border-right:10px solid transparent;
+	border-left:10px solid transparent;
+	border-top:10px solid white;
+  z-index: 10;
+}
+
+.acc-time {
+  margin-right: 10px;
+}
+
+.loginOut {
+  margin-left: 30px;
+}
