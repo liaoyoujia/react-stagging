@@ -4,7 +4,7 @@ import axios from 'axios'
 import {message} from 'antd';
 
 let err = () => {
-  message.error('This is a message of error')
+  message.error('接口出错了，怎么办啊，我也不知道啊')
 }
 
 let http = axios.create({

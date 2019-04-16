@@ -1,0 +1,10 @@
+.city{
+  background-color: #fff;
+  min-height: 62vh;
+}
+
+.empty{
+  position: relative;
+  top: 24vh;
+  
+}
