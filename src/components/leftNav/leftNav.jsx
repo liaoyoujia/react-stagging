@@ -4,6 +4,7 @@ import { Menu } from 'antd';
 import { NavLink } from 'react-router-dom'
 import NaMenu from '../../config/menuConfig'
 import { connect } from 'react-redux';
+import * as actionCreators from '../../store/actionCreator'
 
 const SubMenu = Menu.SubMenu;
 
@@ -57,9 +58,7 @@ class LeftNav extends Component {
 
 const mapDispatch = (dispatch) => ({
 	changeMenu(name) {
-    console.log(name,123123213);
-    
-		dispatch(actionCreators.changeMenu(name));
+		dispatch(actionCreators.changeMenu(name.key));
 	}
 });
 
