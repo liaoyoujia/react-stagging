@@ -15,7 +15,6 @@ let http = axios.create({
 
 http.interceptors.request.use(function (config) {
   return config;
-  console.log(config + '请求');
 
 }, function (error) {
   err()
@@ -24,7 +23,6 @@ http.interceptors.request.use(function (config) {
 
 http.interceptors.response.use(function (response) {
   return response;
-  console.log(response + '回复');
 
 }, function (error) {
   err()
